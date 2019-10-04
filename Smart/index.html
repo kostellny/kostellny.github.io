@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Source+Sans+Pro:400,400i&display=swap" rel="stylesheet">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow, noodp">
+    <meta name="googlebot" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <title>Smart</title>
+</head>
+<body>
+
+<svg style="display: none;">
+    <symbol id="fb" viewbox="0 0 408.788 408.788">
+        <g><path d="M353.701,0H55.087C24.665,0,0.002,24.662,0.002,55.085v298.616c0,30.423,24.662,55.085,55.085,55.085
+	h147.275l0.251-146.078h-37.951c-4.932,0-8.935-3.988-8.954-8.92l-0.182-47.087c-0.019-4.959,3.996-8.989,8.955-8.989h37.882
+	v-45.498c0-52.8,32.247-81.55,79.348-81.55h38.65c4.945,0,8.955,4.009,8.955,8.955v39.704c0,4.944-4.007,8.952-8.95,8.955
+	l-23.719,0.011c-25.615,0-30.575,12.172-30.575,30.035v39.389h56.285c5.363,0,9.524,4.683,8.892,10.009l-5.581,47.087
+	c-0.534,4.506-4.355,7.901-8.892,7.901h-50.453l-0.251,146.078h87.631c30.422,0,55.084-24.662,55.084-55.084V55.085
+	C408.786,24.662,384.124,0,353.701,0z"/>
+    </g>
+    </symbol>
+    
+    <symbol id="inst" viewbox="0 0 169.063 169.063">
+        <g><path d="M122.406,0H46.654C20.929,0,0,20.93,0,46.655v75.752c0,25.726,20.929,46.655,46.654,46.655h75.752
+		c25.727,0,46.656-20.93,46.656-46.655V46.655C169.063,20.93,148.133,0,122.406,0z M154.063,122.407
+		c0,17.455-14.201,31.655-31.656,31.655H46.654C29.2,154.063,15,139.862,15,122.407V46.655C15,29.201,29.2,15,46.654,15h75.752
+		c17.455,0,31.656,14.201,31.656,31.655V122.407z"/>
+	<path d="M84.531,40.97c-24.021,0-43.563,19.542-43.563,43.563c0,24.02,19.542,43.561,43.563,43.561s43.563-19.541,43.563-43.561
+		C128.094,60.512,108.552,40.97,84.531,40.97z M84.531,113.093c-15.749,0-28.563-12.812-28.563-28.561
+		c0-15.75,12.813-28.563,28.563-28.563s28.563,12.813,28.563,28.563C113.094,100.281,100.28,113.093,84.531,113.093z"/>
+	<path d="M129.921,28.251c-2.89,0-5.729,1.17-7.77,3.22c-2.051,2.04-3.23,4.88-3.23,7.78c0,2.891,1.18,5.73,3.23,7.78
+		c2.04,2.04,4.88,3.22,7.77,3.22c2.9,0,5.73-1.18,7.78-3.22c2.05-2.05,3.22-4.89,3.22-7.78c0-2.9-1.17-5.74-3.22-7.78
+		C135.661,29.421,132.821,28.251,129.921,28.251z"/>
+    </g>
+    </symbol>
+    
+    <symbol id="vk" viewbox="0 0 304.36 304.36">
+    <g>
+	<path id="XMLID_807_" style="fill-rule:evenodd;clip-rule:evenodd;" d="M261.945,175.576c10.096,9.857,20.752,19.131,29.807,29.982
+		c4,4.822,7.787,9.798,10.684,15.394c4.105,7.955,0.387,16.709-6.746,17.184l-44.34-0.02c-11.436,0.949-20.559-3.655-28.23-11.474
+		c-6.139-6.253-11.824-12.908-17.727-19.372c-2.42-2.642-4.953-5.128-7.979-7.093c-6.053-3.929-11.307-2.726-14.766,3.587
+		c-3.523,6.421-4.322,13.531-4.668,20.687c-0.475,10.441-3.631,13.186-14.119,13.664c-22.414,1.057-43.686-2.334-63.447-13.641
+		c-17.422-9.968-30.932-24.04-42.691-39.971C34.828,153.482,17.295,119.395,1.537,84.353C-2.01,76.458,0.584,72.22,9.295,72.07
+		c14.465-0.281,28.928-0.261,43.41-0.02c5.879,0.086,9.771,3.458,12.041,9.012c7.826,19.243,17.402,37.551,29.422,54.521
+		c3.201,4.518,6.465,9.036,11.113,12.216c5.142,3.521,9.057,2.354,11.476-3.374c1.535-3.632,2.207-7.544,2.553-11.434
+		c1.146-13.383,1.297-26.743-0.713-40.079c-1.234-8.323-5.922-13.711-14.227-15.286c-4.238-0.803-3.607-2.38-1.555-4.799
+		c3.564-4.172,6.916-6.769,13.598-6.769h50.111c7.889,1.557,9.641,5.101,10.721,13.039l0.043,55.663
+		c-0.086,3.073,1.535,12.192,7.07,14.226c4.43,1.448,7.35-2.096,10.008-4.905c11.998-12.734,20.561-27.783,28.211-43.366
+		c3.395-6.852,6.314-13.968,9.143-21.078c2.096-5.276,5.385-7.872,11.328-7.757l48.229,0.043c1.43,0,2.877,0.021,4.262,0.258
+		c8.127,1.385,10.354,4.881,7.844,12.817c-3.955,12.451-11.65,22.827-19.174,33.251c-8.043,11.129-16.645,21.877-24.621,33.072
+		C252.26,161.544,252.842,166.697,261.945,175.576L261.945,175.576z M261.945,175.576"/>
+</g>
+    </symbol>
+    
+        <symbol id="arrow-right" viewbox="0 0 284.935 284.936">
+        <g>
+	<path d="M222.701,135.9L89.652,2.857C87.748,0.955,85.557,0,83.084,0c-2.474,0-4.664,0.955-6.567,2.857L62.244,17.133
+		c-1.906,1.903-2.855,4.089-2.855,6.567c0,2.478,0.949,4.664,2.855,6.567l112.204,112.204L62.244,254.677
+		c-1.906,1.903-2.855,4.093-2.855,6.564c0,2.477,0.949,4.667,2.855,6.57l14.274,14.271c1.903,1.905,4.093,2.854,6.567,2.854
+		c2.473,0,4.663-0.951,6.567-2.854l133.042-133.044c1.902-1.902,2.854-4.093,2.854-6.567S224.603,137.807,222.701,135.9z"/>
+</g>
+    </symbol>
+    
+    <symbol id="circle-fb" viewbox="0 0 291.319 291.319">
+        <g>
+            <path d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66c0,80.45-65.21,145.659-145.66,145.659
+		S0,226.109,0,145.66C0,65.219,65.21,0,145.659,0z"/>
+	<path style="fill:#FFFFFF;" d="M163.394,100.277h18.772v-27.73h-22.067v0.1c-26.738,0.947-32.218,15.977-32.701,31.763h-0.055
+		v13.847h-18.207v27.156h18.207v72.793h27.439v-72.793h22.477l4.342-27.156h-26.81v-8.366
+		C154.791,104.556,158.341,100.277,163.394,100.277z"/>
+        </g>
+    </symbol>
+    
+    <symbol id="circle-twit" viewbox="0 0 291.319 291.319">
+        <g>
+	<path d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66c0,80.45-65.21,145.659-145.66,145.659
+		S0,226.109,0,145.66C0,65.219,65.21,0,145.659,0z"/>
+	<path style="fill:#FFFFFF;" d="M236.724,98.129c-6.363,2.749-13.21,4.597-20.392,5.435c7.338-4.27,12.964-11.016,15.613-19.072
+		c-6.864,3.96-14.457,6.828-22.55,8.366c-6.473-6.691-15.695-10.87-25.909-10.87c-19.591,0-35.486,15.413-35.486,34.439
+		c0,2.704,0.31,5.335,0.919,7.857c-29.496-1.438-55.66-15.158-73.157-35.996c-3.059,5.089-4.807,10.997-4.807,17.315
+		c0,11.944,6.263,22.504,15.786,28.668c-5.826-0.182-11.289-1.721-16.086-4.315v0.437c0,16.696,12.235,30.616,28.476,33.784
+		c-2.977,0.783-6.109,1.211-9.35,1.211c-2.285,0-4.506-0.209-6.673-0.619c4.515,13.692,17.625,23.651,33.165,23.925
+		c-12.153,9.249-27.457,14.748-44.089,14.748c-2.868,0-5.69-0.164-8.476-0.482c15.722,9.777,34.367,15.485,54.422,15.485
+		c65.292,0,100.997-52.51,100.997-98.029l-0.1-4.461C225.945,111.111,231.963,105.048,236.724,98.129z"/>
+</g>
+    </symbol>
+    
+    <symbol id="circle-link" viewbox="0 0 291.319 291.319">
+        <g>
+	<path d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66s-65.21,145.659-145.66,145.659S0,226.1,0,145.66
+		S65.21,0,145.659,0z"/>
+	<path style="fill:#FFFFFF;" d="M82.079,200.136h27.275v-90.91H82.079V200.136z M188.338,106.077
+		c-13.237,0-25.081,4.834-33.483,15.504v-12.654H127.48v91.21h27.375v-49.324c0-10.424,9.55-20.593,21.512-20.593
+		s14.912,10.169,14.912,20.338v49.57h27.275v-51.6C218.553,112.686,201.584,106.077,188.338,106.077z M95.589,100.141
+		c7.538,0,13.656-6.118,13.656-13.656S103.127,72.83,95.589,72.83s-13.656,6.118-13.656,13.656S88.051,100.141,95.589,100.141z"/>
+</g>
+    </symbol>
+    
+    <symbol id="circle-inst" viewbox="0 0 89.758 89.758">
+        <g>
+	<path d="M58.255,23.88H31.503c-4.27,0-7.744,3.474-7.744,7.744v26.752c0,4.27,3.474,7.745,7.744,7.745
+		h26.752c4.27,0,7.745-3.474,7.745-7.745V31.624C66,27.354,62.526,23.88,58.255,23.88z M44.879,58.906
+		c-7.667,0-13.905-6.238-13.905-13.906c0-7.667,6.238-13.905,13.905-13.905c7.668,0,13.906,6.238,13.906,13.905
+		C58.785,52.667,52.546,58.906,44.879,58.906z M59.232,33.97c-1.815,0-3.291-1.476-3.291-3.29c0-1.814,1.476-3.29,3.291-3.29
+		c1.814,0,3.29,1.476,3.29,3.29C62.522,32.494,61.046,33.97,59.232,33.97z"/>
+	<path d="M44.879,36.971c-4.426,0-8.03,3.602-8.03,8.028c0,4.428,3.604,8.031,8.03,8.031
+		c4.428,0,8.029-3.603,8.029-8.031C52.908,40.574,49.306,36.971,44.879,36.971z"/>
+	<path d="M44.879,0C20.094,0,0,20.094,0,44.879c0,24.785,20.094,44.879,44.879,44.879
+		c24.785,0,44.879-20.094,44.879-44.879C89.758,20.094,69.664,0,44.879,0z M71.875,58.376c0,7.511-6.109,13.62-13.62,13.62H31.503
+		c-7.51,0-13.62-6.109-13.62-13.62V31.624c0-7.51,6.11-13.62,13.62-13.62h26.752c7.511,0,13.62,6.11,13.62,13.62V58.376z"/>
+</g>
+    </symbol>
+</svg>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a class="logo" href="#">
+                <span class="logo__orange">S</span>mart
+            </a>
+            
+            <div class="burger">
+                <div class="burger__item"></div>
+            </div>
+        </div>
+        
+        <div class="header__content">
+            <h1 class="title">
+                <span class="orange">Smart</span> Agency Landing Page
+            </h1>
+            
+            <h2 class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, fuga provident. Libero magni quibusdam labore ad iste saepe hic, maxime qui ipsum tempore beatae, volu tomi ptates        doloremque rerum aspernatur dolorum at!</h2>
+            
+        </div>
+        
+        <div class="header__form">
+            <div class="form__title"><span class="orange">Send</span> A Message</div>
+            
+            <form class="form" action="/" method="post">
+                <div class="form__group">
+                    <input class="input" type="text" placeholder="Your Name">
+                </div>
+                
+                <div class="form__group">
+                    <input class="input" type="email" placeholder="Your Email">
+                </div>
+                
+                 <div class="form__group">
+                    <input class="input" type="tel" placeholder="Your Phone">
+                </div>
+                
+                <button class="btn" type="submit">Send Message</button>
+                
+            </form>
+        </div>
+    </div>
+</header>
+
+<!-- body -->
+
+
+
+
+
+<!-- working -->
+<div class="container">
+    <div class="work__title">
+        <div class="title"><span class="orange">Working</span> Process</div>
+
+        <div class="subtitle">Lorem ipsum dolor sit amet consectet ur adipiscing elit  Vestibulum bibend um vestibulum.</div>
+    </div>
+    
+    <div class="work__blogs">
+        <div class="row">
+            <div class="col-lg-3 work__item work__item--blue">
+                <div class="work__img"> 
+                    <img src="assets/img/working/1.png" alt="">
+                </div>
+            
+                <div class="work__name">Koc Koi Tomi</div>
+            
+                <div class="work__text">Lorem ipsum is dummy lorem very dumy</div>
+                
+                <div class="btn btn--white work__btn">
+                + Know More
+                </div>
+            </div>
+            
+        
+            <div class="col-lg-3 work__item work__item--pink">
+                <div class="work__img"> 
+                    <img src="assets/img/working/2.png" alt="">
+                </div>
+            
+                <div class="work__name">Koimona Set</div>
+            
+                <div class="work__text">Lorem ipsum is dummy lorem very dumy</div>
+                
+                <div class="btn btn--white work__btn">
+                + Know More
+                </div>
+            </div>
+            
+            <div class="col-lg-3 work__item work__item--darkBlue">
+                <div class="work__img"> 
+                    <img src="assets/img/working/3.png" alt="">
+                </div>
+            
+                <div class="work__name">Setting Koire</div>
+            
+                <div class="work__text">Lorem ipsum is dummy lorem very dumy</div>
+                
+                <div class="btn btn--white work__btn">
+                + Know More
+                </div>
+            </div>
+            
+            <div class="col-lg-3 work__item work__item--red">
+                <div class="work__img"> 
+                    <img src="assets/img/working/3.png" alt="">
+                </div>
+            
+                <div class="work__name">Ko Image Lara</div>
+            
+                <div class="work__text">Lorem ipsum is dummy lorem very dumy</div>
+                
+                <div class="btn btn--white work__btn">
+                + Know More
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- featured -->
+<div class="featured">
+    <div class="container">
+        <div class="title"><span class="orange">Featured</span> Works</div>
+        
+        <div class="subtitle">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga provident Libero.
+        </div>
+        
+        <div class="featured__blocks">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="featured__item">
+                        <img class="featured__img "src="assets/img/featured/1.jpg" alt="">
+                    </div>   
+                </div>
+                
+                 <div class="col-lg-4">
+                    <div class="featured__item">
+                        <img class="featured__img "src="assets/img/featured/2.jpg" alt="">
+                    </div>   
+                </div>
+                
+                 <div class="col-lg-4">
+                    <div class="featured__item">
+                        <img class="featured__img "src="assets/img/featured/3.jpg" alt="">
+                    </div>   
+                </div>
+                
+                 <div class="col-lg-4">
+                    <div class="featured__item">
+                        <img class="featured__img "src="assets/img/featured/4.jpg" alt="">
+                    </div>   
+                </div>
+                
+                 <div class="col-lg-4">
+                    <div class="featured__item">
+                        <img class="featured__img "src="assets/img/featured/5.jpg" alt="">
+                    </div>   
+                </div>
+                
+                 <div class="col-lg-4">
+                    <div class="featured__item">
+                        <img class="featured__img "src="assets/img/featured/6.jpg" alt="">
+                    </div>   
+                </div>
+                
+                 <div class="col-lg-4">
+                    <div class="featured__item">
+                        <img class="featured__img "src="assets/img/featured/7.jpg" alt="">
+                    </div>   
+                </div>
+                
+                 <div class="col-lg-4">
+                    <div class="featured__item">
+                        <img class="featured__img "src="assets/img/featured/8.jpg" alt="">
+                    </div>   
+                </div>
+                
+                 <div class="col-lg-4">
+                    <div class="featured__item">
+                        <img class="featured__img "src="assets/img/featured/9.jpg" alt="">
+                    </div>   
+                </div>
+                
+            </div>
+        </div><!-- ./featured__blocks -->
+            
+            
+    </div><!-- ./container -->
+</div><!-- ./featured -->
+<!-- services -->
+<div class="services">
+    <div class="container">
+        <div class="services__title">
+            <div class="title"><span class="orange">Services</span> We Provide</div>
+        
+            <div class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga provident Libero.</div>
+        
+        </div>
+        
+        <div class="services__block">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="services__nav">
+                        <div class="services__nav__item">
+                            <img class="services__img" src="assets/img/services/1.png" alt="">
+                        </div>
+                        
+                        <div class="services__nav__item">
+                            <img class="services__img" src="assets/img/services/2.png" alt="">
+                        </div>
+                        
+                        <div class="services__nav__item">
+                            <img class="services__img" src="assets/img/services/3.png" alt="">
+                        </div>
+                        
+                        <div class="services__nav__item">
+                            <img class="services__img" src="assets/img/services/1.png" alt="">
+                        </div>
+                    </div>
+                </div><!-- /.col-lg-2 -->
+                
+                <div class="col-lg-6">
+                    <div class="services__content__title">
+                        Modern App Design
+                    </div>
+                    
+                    <div class="services__content__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum totam ad sint error porro. Consectetur, sunt, aperiam. Magni rem optio distinctio illum consequuntur delectus nulla illo aperiam itaque cumque.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem unde facilis.</p>
+                        <p>vitae eveniet quam rem unde facilis.</p>
+                    </div>
+                    
+                    <div class="btn btn--white btn-sm">
+                        + Know More
+                    </div>
+                </div><!-- /.col-lg-6 -->
+                
+                <div class="col-lg-4 services__watch">
+                    <img class="services__watch__img" src="assets/img/services/watch.png" alt="">
+                </div>
+            </div>
+        </div><!-- /.services__block -->
+        
+    </div><!-- /.container -->
+</div><!-- /.services -->
+<!-- team -->
+<div class="team">
+    <div class="container">
+        
+        <div class="team__title">
+            <div class="title"><span class="orange">Team</span> Chinen & Skills</div>
+            
+            <div class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga provident Libero.</div>
+        </div>
+        
+        <div class="team__blocks">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="team__item">
+                       <div class="team__item__transform">
+                        <img class="team__photo" src="assets/img/team/1.png" alt="">
+                        
+                        <div class="team__info">
+                            <div class="team__name">Bedi Manos</div>
+                            <div class="team__prof">UI/UX Parena</div>
+                        </div>
+                        
+                        <div class="team__info--active">
+                            <div class="team__skills">
+                                <div class="skills__prof">
+                                    UI/UX  Design
+                                </div>
+                                
+                                <div class="skills__eng">
+                                    English
+                                </div>
+                                
+                                <div class="skills__comm">
+                                    Communication
+                                </div>
+                            </div>
+                            
+                            <div class="team__name">
+                            Bedi Manos
+                            </div>
+                            <div class="team__prof--active">
+                                UI/UX Parena
+                            </div>
+                            
+                            <div class="social">
+                                <a class="social__link" href="#" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#fb">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </div>
+                            
+                            <div class="social">
+                                <a class="social__link" href="#" target="_blank">
+                                    <svg class="social__icon social__icon--inst">
+                                        <use xlink:href="#inst">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </div>
+                            
+                              <div class="social">
+                                <a class="social__link" href="#" target="_blank">
+                                    <svg class="social__icon social__icon--vk">
+                                        <use xlink:href="#vk">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </div>
+                            
+                       </div><!-- /.team__info--active-->
+                    </div><!-- /.team__item__transform-->
+                    </div><!-- /.team__item -->
+                </div><!-- /.col-lg-4 -->
+                
+                <div class="col-lg-4">
+                    <div class="team__item">
+                       <div class="team__item__transform">
+                        <img class="team__photo" src="assets/img/team/2.png" alt="">
+                        
+                        <div class="team__info">
+                            <div class="team__name">Al Rayhan</div>
+                            <div class="team__prof">UI/UX Designer</div>
+                        </div>
+                        
+                        <div class="team__info--active">
+                            <div class="team__skills">
+                                <div class="skills__prof">
+                                    UI/UX  Design
+                                </div>
+                                
+                                <div class="skills__eng">
+                                    English
+                                </div>
+                                
+                                <div class="skills__comm">
+                                    Communication
+                                </div>
+                            </div>
+                            
+                            <div class="team__name">
+                            Bedi Manos
+                            </div>
+                            <div class="team__prof--active">
+                                UI/UX Parena
+                            </div>
+                            
+                            <div class="social">
+                                <a class="social__link" href="#" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#fb">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </div>
+                            
+                            <div class="social">
+                                <a class="social__link" href="#" target="_blank">
+                                    <svg class="social__icon social__icon--inst">
+                                        <use xlink:href="#inst">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </div>
+                            
+                              <div class="social">
+                                <a class="social__link" href="#" target="_blank">
+                                    <svg class="social__icon social__icon--vk">
+                                        <use xlink:href="#vk">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </div>
+                            
+                       </div><!-- /.team__info--active-->
+                    </div><!-- /.team__item__transform-->
+                    </div><!-- /.team__item -->
+                </div><!-- /.col-lg-4 -->
+                
+                <div class="col-lg-4">
+                    <div class="team__item">
+                       <div class="team__item__transform">
+                        <img class="team__photo" src="assets/img/team/3.png" alt="">
+                        
+                        <div class="team__info">
+                            <div class="team__name">Lana Rhodes</div>
+                            <div class="team__prof">UI/UX Designer</div>
+                        </div>
+                        
+                        <div class="team__info--active">
+                            <div class="team__skills">
+                                <div class="skills__prof">
+                                    UI/UX  Design
+                                </div>
+                                
+                                <div class="skills__eng">
+                                    English
+                                </div>
+                                
+                                <div class="skills__comm">
+                                    Communication
+                                </div>
+                            </div>
+                            
+                            <div class="team__name">
+                            Bedi Manos
+                            </div>
+                            <div class="team__prof--active">
+                                UI/UX Parena
+                            </div>
+                            
+                            <div class="social">
+                                <a class="social__link" href="#" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#fb">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </div>
+                            
+                            <div class="social">
+                                <a class="social__link" href="#" target="_blank">
+                                    <svg class="social__icon social__icon--inst">
+                                        <use xlink:href="#inst">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </div>
+                            
+                              <div class="social">
+                                <a class="social__link" href="#" target="_blank">
+                                    <svg class="social__icon social__icon--vk">
+                                        <use xlink:href="#vk">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </div>
+                            
+                       </div><!-- /.team__info--active-->
+                    </div><!-- /.team__item__transform-->
+                    </div><!-- /.team__item -->
+                </div><!-- /.col-lg-4 -->
+                
+            </div><!-- /.row -->
+        </div><!-- /.team__blocks -->
+        
+    </div><!-- /.container -->
+</div><!-- /.team -->
+<!-- links -->
+<div class="links">
+    <div class="container">
+        <div class="links__block">
+            <div class="row">
+                <div class="col-lg-2">
+                    <img class="link__img" src="assets/img/links/1.png" alt="">
+                </div>
+                
+                <div class="col-lg-2">
+                    <img class="link__img" src="assets/img/links/2.png" alt="">
+                </div>
+                
+                <div class="col-lg-2">
+                    <img class="link__img" src="assets/img/links/3.png" alt="">
+                </div>
+                
+                <div class="col-lg-2">
+                    <img class="link__img" src="assets/img/links/1.png" alt="">
+                </div>
+                
+                <div class="col-lg-2">
+                    <img class="link__img" src="assets/img/links/2.png" alt="">
+                </div>
+                
+                <div class="col-lg-2">
+                    <img class="link__img" src="assets/img/links/3.png" alt="">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="btn btn--white btn__footer">Contact Us</div>
+        
+        <div class="footer__links__block">
+           
+            <div class="footer__links__item">
+                <div class="social">
+                    <a class="social__link" href="#" target="_blank">
+                        <svg class="social__icon social__icon--circle">
+                            <use xlink:href="#circle-fb"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+
+            <div class="footer__links__item">
+                <div class="social">
+                    <a class="social__link social__link--twitter" href="#" target="_blank">
+                        <svg class="social__icon social__icon--circle">
+                            <use xlink:href="#circle-twit"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            
+            <div class="footer__links__item">
+                <div class="social">
+                    <a class="social__link social__link--linkedin" href="#" target="_blank">
+                        <svg class="social__icon social__icon--circle">
+                            <use xlink:href="#circle-link"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            
+              <div class="footer__links__item">
+                <div class="social">
+                    <a class="social__link social__link--instgrm" href="#" target="_blank">
+                        <svg class="social__icon social__icon--circle">
+                            <use xlink:href="#circle-inst"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer__links__item">
+                <div class="footer__text">
+                    © 2019 kostellny.
+                </div>
+            </div>
+       
+        </div><!-- /.footer__links__block -->
+    </div><!-- /.container -->
+</footer>
+
+
+
+
+
+
+                        
+<script src="assets/js/app.min.js"></script>
+
+</body>
+</html>
