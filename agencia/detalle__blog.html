@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow, noodp">
+    <meta name="googlebot" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#b91d47">
+    <meta name="theme-color" content="#ffffff">
+    
+    <title>Detalle Blog</title>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+<!-- Sprite -->
+<svg style="display: none;">
+    <symbol id="call" viewbox="0 0 348.077 348.077">
+        <g>
+			<path d="M340.273,275.083l-53.755-53.761c-10.707-10.664-28.438-10.34-39.518,0.744l-27.082,27.076
+				c-1.711-0.943-3.482-1.928-5.344-2.973c-17.102-9.476-40.509-22.464-65.14-47.113c-24.704-24.701-37.704-48.144-47.209-65.257
+				c-1.003-1.813-1.964-3.561-2.913-5.221l18.176-18.149l8.936-8.947c11.097-11.1,11.403-28.826,0.721-39.521L73.39,8.194
+				C62.708-2.486,44.969-2.162,33.872,8.938l-15.15,15.237l0.414,0.411c-5.08,6.482-9.325,13.958-12.484,22.02
+				C3.74,54.28,1.927,61.603,1.098,68.941C-6,127.785,20.89,181.564,93.866,254.541c100.875,100.868,182.167,93.248,185.674,92.876
+				c7.638-0.913,14.958-2.738,22.397-5.627c7.992-3.122,15.463-7.361,21.941-12.43l0.331,0.294l15.348-15.029
+				C350.631,303.527,350.95,285.795,340.273,275.083z"/>
+		</g>
+    </symbol>
+    
+    <symbol id="fb" viewbox="0 0 291.319 291.319">
+        <g>
+	<path d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66c0,80.45-65.21,145.659-145.66,145.659
+		S0,226.109,0,145.66C0,65.219,65.21,0,145.659,0z"/>
+	<path style="fill:#FFFFFF;" d="M163.394,100.277h18.772v-27.73h-22.067v0.1c-26.738,0.947-32.218,15.977-32.701,31.763h-0.055
+		v13.847h-18.207v27.156h18.207v72.793h27.439v-72.793h22.477l4.342-27.156h-26.81v-8.366
+		C154.791,104.556,158.341,100.277,163.394,100.277z"/>
+</g>
+    </symbol>
+    
+    <symbol id="twit" viewbox="0 0 291.319 291.319">
+        <g>
+	<path d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66c0,80.45-65.21,145.659-145.66,145.659
+		S0,226.109,0,145.66C0,65.219,65.21,0,145.659,0z"/>
+	<path style="fill:#FFFFFF;" d="M236.724,98.129c-6.363,2.749-13.21,4.597-20.392,5.435c7.338-4.27,12.964-11.016,15.613-19.072
+		c-6.864,3.96-14.457,6.828-22.55,8.366c-6.473-6.691-15.695-10.87-25.909-10.87c-19.591,0-35.486,15.413-35.486,34.439
+		c0,2.704,0.31,5.335,0.919,7.857c-29.496-1.438-55.66-15.158-73.157-35.996c-3.059,5.089-4.807,10.997-4.807,17.315
+		c0,11.944,6.263,22.504,15.786,28.668c-5.826-0.182-11.289-1.721-16.086-4.315v0.437c0,16.696,12.235,30.616,28.476,33.784
+		c-2.977,0.783-6.109,1.211-9.35,1.211c-2.285,0-4.506-0.209-6.673-0.619c4.515,13.692,17.625,23.651,33.165,23.925
+		c-12.153,9.249-27.457,14.748-44.089,14.748c-2.868,0-5.69-0.164-8.476-0.482c15.722,9.777,34.367,15.485,54.422,15.485
+		c65.292,0,100.997-52.51,100.997-98.029l-0.1-4.461C225.945,111.111,231.963,105.048,236.724,98.129z"/>
+</g>
+    </symbol>
+    
+    <symbol id="inst" viewbox="0 0 291.319 291.319">
+        <g>
+	<path  d="M145.659,0c80.44,0,145.66,65.219,145.66,145.66S226.1,291.319,145.66,291.319S0,226.1,0,145.66
+		S65.21,0,145.659,0z"/>
+	<path style="fill:#FFFFFF;" d="M195.93,63.708H95.38c-17.47,0-31.672,14.211-31.672,31.672v100.56
+		c0,17.47,14.211,31.672,31.672,31.672h100.56c17.47,0,31.672-14.211,31.672-31.672V95.38
+		C227.611,77.919,213.4,63.708,195.93,63.708z M205.908,82.034l3.587-0.009v27.202l-27.402,0.091l-0.091-27.202
+		C182.002,82.116,205.908,82.034,205.908,82.034z M145.66,118.239c22.732,0,27.42,21.339,27.42,27.429
+		c0,15.103-12.308,27.411-27.42,27.411c-15.121,0-27.42-12.308-27.42-27.411C118.23,139.578,122.928,118.239,145.66,118.239z
+		 M209.65,193.955c0,8.658-7.037,15.704-15.713,15.704H97.073c-8.667,0-15.713-7.037-15.713-15.704v-66.539h22.759
+		c-2.112,5.198-3.305,12.299-3.305,18.253c0,24.708,20.101,44.818,44.818,44.818s44.808-20.11,44.808-44.818
+		c0-5.954-1.193-13.055-3.296-18.253h22.486v66.539L209.65,193.955z"/>
+</g>
+    </symbol>
+    
+    <symbol id="id" viewbox="0 0 291.319 291.319">
+        <g>
+	<path d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66s-65.21,145.659-145.66,145.659S0,226.1,0,145.66
+		S65.21,0,145.659,0z"/>
+	<path style="fill:#FFFFFF;" d="M82.079,200.136h27.275v-90.91H82.079V200.136z M188.338,106.077
+		c-13.237,0-25.081,4.834-33.483,15.504v-12.654H127.48v91.21h27.375v-49.324c0-10.424,9.55-20.593,21.512-20.593
+		s14.912,10.169,14.912,20.338v49.57h27.275v-51.6C218.553,112.686,201.584,106.077,188.338,106.077z M95.589,100.141
+		c7.538,0,13.656-6.118,13.656-13.656S103.127,72.83,95.589,72.83s-13.656,6.118-13.656,13.656S88.051,100.141,95.589,100.141z"/>
+</g>
+    </symbol>
+    
+    <symbol id="search" viewbox="0 0 30.239 30.239">
+        <g>
+	<path d="M20.194,3.46c-4.613-4.613-12.121-4.613-16.734,0c-4.612,4.614-4.612,12.121,0,16.735
+		c4.108,4.107,10.506,4.547,15.116,1.34c0.097,0.459,0.319,0.897,0.676,1.254l6.718,6.718c0.979,0.977,2.561,0.977,3.535,0
+		c0.978-0.978,0.978-2.56,0-3.535l-6.718-6.72c-0.355-0.354-0.794-0.577-1.253-0.674C24.743,13.967,24.303,7.57,20.194,3.46z
+		 M18.073,18.074c-3.444,3.444-9.049,3.444-12.492,0c-3.442-3.444-3.442-9.048,0-12.492c3.443-3.443,9.048-3.443,12.492,0
+		C21.517,9.026,21.517,14.63,18.073,18.074z"/>
+</g>
+    </symbol>
+</svg>
+
+
+
+<!-- Header Detalle Blog -->
+<header class="header header--detalleB">
+    <div class="container">
+        
+        <div class="header__menu header__menu--detalleB">
+            <div class="header__logo">
+                <img class="header__logo-img" src="assets/img/header/logo.png" alt="">
+            </div>
+            
+            <a class="burger__menu" href="#">
+                <div class="burger__menu__item"></div>
+            </a>
+            
+            <nav class="nav">
+                <a class="nav__link" href="index.html">Home</a>
+                <a class="nav__link" href="la_agencia.html">La Agencia</a>
+                <a class="nav__link" href="services__page.html">Servicios</a>
+                <a class="nav__link" href="portafolio__page.html">Portfolio</a>
+                <a class="nav__link" href="blog__page.html">Blog</a>
+            </nav>
+            <div class="header__btn">
+                <a class="header__btn-link" href="contactenos__page.html">
+                    Contáctanos
+                </a>
+                <a class="header__call" href="contactenos__page.html">
+                    <svg class="call__svg">
+                        <use xlink:href="#call"></use>
+                    </svg>
+                </a>
+            </div>
+        </div><!-- /.header__menu -->
+        
+     
+        
+    </div> <!-- /.container -->
+</header>
+<!-- Content Detalle Blog -->
+<section class="content__detalleB">
+    <div class="container">
+           
+        <div class="content__detalleB__blog__block">
+            <div class="way">
+                <a class="way__link" href="contactenos__page.html">
+                    Blog  >  Categoría  >  <span>Título de la entrada</span>
+                </a>
+            </div>
+            
+            <div class="author__date">
+                <div class="author">
+                    Nombre del autor <br> @ndavidsan
+                    <div class="author__photo">
+                        <img clas="author__img" src="assets/img/detalle-blog/author1.png" alt="">
+                    </div>    
+                </div>
+                <div class="date">
+                    23 / 10 / 2019
+                </div>
+            </div>
+               
+            <div class="content__detalleB__title">
+                Título de la entrada a doble línea, título de la entrada
+            </div>
+            
+            <div class="content__detalleB__text">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ex justo, finibus vel volutpat sit amet, luctus nec mi. Integer vitae bibendum ex. Curabitur cursus neque vel metus vulputate finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span>Nunc lorem est, tempor at quam sed, sollicitudin sollicitudin magna.</span> Praesent dictum nisi et convallis posuere. Ut laoreet non arcu nec finibus. Aenean id condimentum nisi. Curabitur vel dolor porttitor, iaculis mi sit amet, maximus est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                </p>
+                <p>
+                    Duis semper laoreet semper. Etiam quis metus et tortor viverra eleifend. Cras pellentesque pellentesque ipsum. Sed vehicula, arcu quis semper pharetra, lectus erat auctor lorem, sed porttitor dolor tellus pellentesque nunc. Fusce nibh elit, aliquet id lacinia non, vestibulum a urna. Aliquam felis ante, vulputate et vestibulum eu, malesuada in arcu. Etiam quis ultrices est.
+                </p>
+                <p>
+                    Fusce bibendum ut est quis placerat. Curabitur vitae libero nibh. Aenean porttitor ipsum efficitur sapien commodo, sit amet pulvinar ligula pulvinar. Morbi a aliquam enim, non pharetra nisi. Suspendisse et hendrerit elit. Morbi molestie faucibus neque ac imperdiet. Vivamus venenatis diam leo, vel aliquam enim dictum in. Cras viverra erat id placerat laoreet. Phasellus sodales molestie ipsum. Ut vehicula faucibus tristique. Fusce volutpat egestas tellus quis finibus. Nulla viverra, risus non facilisis faucibus, purus erat euismod diam, finibus aliquam quam lectus sit am
+                </p>
+            </div> <!-- content__detalleB__text-->
+              
+            <div class="content__detalleB__photo">
+                <img class="content__detalleB__img" src="assets/img/detalle-blog/1.png" alt="">
+            </div>
+              
+            <div class="content__detalleB__text">
+                <p>
+                    Nullam scelerisque pretium hendrerit. Nunc erat ex, auctor ut consectetur eget, tempus ut nibh. Praesent in eros non quam rutrum blandit. Ut pretium ipsum ac justo ultricies, et ullamcorper felis fringilla. Phasellus vehicula quis est a bibendum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi sem metus, euismod eu nulla non, bibendum convallis sapien. Nullam nisl ipsum, egestas eget lobortis a, porttitor at leo. Cras non nisi ac elit ultrices consectetur. Etiam eros lectus, imperdiet in consequat eget, malesuada sed libero. Praesent mattis pharetra ultricies. Cras et scelerisque tellus. Etiam vitae justo ac elit lobortis ornare vitae consequat sem. Mauris purus nulla, auctor ut massa dapibus, pulvinar molestie nulla. Maecenas porta eros
+                </p>
+                <p>
+                    Etiam varius condimentum quam ut dapibus. Sed venenatis ex vitae odio cursus, vitae laoreet risus auctor. Cras vulputate, nisi nec sollicitudin auctor, ipsum tellus laoreet massa, vitae cursus augue quam et ipsum. Integer pulvinar massa at lectus dapibus, vitae accumsan diam consequat. Mauris nisi dolor, viverra in ultrices non, malesuada ac arcu. Aenean velit nisi, porta vel euismod vitae, imperdiet non neque. In hac habitasse platea dictumst. Donec volutpat augue ac quam cursus dignissim. Phasellus bibendum sapien non nunc sagittis tincidunt. Ut ut lorem pharetra, pellentesque sapien tempor, viverra est. Praesent iaculis nulla urna, non eleifend eros sagittis id.
+                </p>
+            </div> <!-- content__detalleB__text-->
+
+            
+            <div class="content__detalleB__social__block">
+                <div class="content__detalleB__social__item">
+                    <a clas="content__detalleB__social__link" href="#">
+                        <svg class="content__detalleB__social__link__icon">
+                            <use xlink:href="#fb"></use>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="content__detalleB__social__item">
+                    <a clas="content__detalleB__social__link" href="#">
+                        <svg class="content__detalleB__social__link__icon">
+                            <use xlink:href="#inst"></use>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="content__detalleB__social__item">
+                    <a clas="content__detalleB__social__link" href="#">
+                        <svg class="content__detalleB__social__link__icon">
+                            <use xlink:href="#twit"></use>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="content__detalleB__social__item">
+                    <a clas="content__detalleB__social__link" href="#">
+                        <svg class="content__detalleB__social__link__icon">
+                            <use xlink:href="#id"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div> <!-- /.content__detalleB__social__block -->
+               
+        </div> <!-- /.content__detalleB__blog__block 1 -->
+  
+        
+    </div> <!-- /.container --> 
+</section> <!-- /.content__detalleB --> 
+
+
+
+
+<section class="detalleB__gray">
+    <div class="container">
+        
+        <div class="detalleB__gray__block">
+            <div class="detalleB__gray__title">
+                ¿Quieres recibir más contenido
+                <br>
+                <span>y actualizaciones de tu interés?</span>
+            </div>
+        
+            <div class="detalleB__gray__text">
+                ¡Suscríbete a nuestro Newsletter!
+            </div>
+            
+            <div class="detalleB__gray__btn__block">
+                <input class="detalleB__gray__input" type="email" placeholder="nombreusuario@gmail.com">
+                <div class="detalleB__gray__btn">
+                    <a class="detalleB__gray__btn__link" href="contactenos__page.html">Enviar</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>           
+</section> <!-- /.detalleB__gray --> 
+
+
+
+
+<section class="detalleB__picture">
+    <img class="detalleB__picture__img" src="assets/img/detalle-blog/picture1.png" alt="">
+</section>
+
+
+
+
+
+
+<section class="content__detalleB">
+    <div class="container">
+           
+        <div class="content__detalleB__blog__block">
+            <div class="way">
+                <a class="way__link" href="contactenos__page.html">
+                    Blog  >  Categoría  >  <span>Título de la entrada</span>
+                </a>
+            </div>
+            
+            <div class="author__date">
+                <div class="author">
+                    Nombre del autor <br> @ndavidsan
+                    <div class="author__photo">
+                        <img clas="author__img" src="assets/img/detalle-blog/author2.png" alt="">
+                    </div>    
+                </div>
+                <div class="date">
+                    23 / 10 / 2019
+                </div>
+            </div>
+               
+            <div class="content__detalleB__title">
+                Título de la entrada a doble línea, título de la entrada
+            </div>
+            
+            <div class="content__detalleB__text">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ex justo, finibus vel volutpat sit amet, luctus nec mi. Integer vitae bibendum ex. Curabitur cursus neque vel metus vulputate finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lorem est, tempor at quam sed, sollicitudin sollicitudin magna. Praesent dictum nisi et convallis posuere. Ut laoreet non arcu nec finibus. Aenean id condimentum nisi. Curabitur vel dolor porttitor, iaculis mi sit amet, maximus est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Cur
+                </p>
+                <p>
+                    Duis semper laoreet semper. Etiam quis metus et tortor viverra eleifend. Cras pellentesque pellentesque ipsum. Sed vehicula, arcu quis semper pharetra, lectus erat auctor lorem, sed porttitor dolor tellus pellentesque nunc. Fusce nibh elit, aliquet id lacinia non, vestibulum a urna. Aliquam felis ante, vulputate et vestibulum eu, malesuada in arcu. Etiam quis ultrices est.
+                </p>
+                <p>
+                    Fusce bibendum ut est quis placerat. Curabitur vitae libero nibh. Aenean porttitor ipsum efficitur sapien commodo, sit amet pulvinar ligula pulvinar. Morbi a aliquam enim, non pharetra nisi. Suspendisse et hendrerit elit. Morbi molestie faucibus neque ac imperdiet. Vivamus venenatis diam leo, vel aliquam enim dictum in. <span>Cras viverra erat id placerat laoreet.</span> Phasellus sodales molestie ipsum. Ut vehicula faucibus tristique. Fusce volutpat egestas tellus quis finibus. Nulla viverra, risus non facilisis faucibus, purus erat euismod diam, finibus aliquam quam lectus sit amet nibh.
+                </p>
+                
+                <p>
+                    Fusce bibendum ut est quis placerat. Curabitur vitae libero nibh. Aenean porttitor ipsum efficitur sapien commodo, sit amet pulvinar ligula pulvinar. Morbi a aliquam enim, non pharetra nisi. Suspendisse et hendrerit elit. Morbi molestie faucibus neque ac imperdiet. Vivamus venenatis diam leo, vel aliquam enim dictum in. Cras viverra erat id placerat laoreet. Phasellus sodales molestie ipsum. Ut vehicula faucibus tristique. Fusce volutpat egestas tellus quis finibus. Nulla viverra, risus non facilisis faucibus, purus erat euismod diam, finibus aliquam quam lectus sit amet nibh.
+                </p>
+                
+                <p>
+                    Etiam varius condimentum quam ut dapibus. Sed venenatis ex vitae odio cursus, vitae laoreet risus auctor. Cras vulputate, nisi nec sollicitudin auctor, ipsum tellus laoreet massa, vitae cursus augue quam et ipsum. Integer pulvinar massa at lectus dapibus, vitae accumsan diam consequat. Mauris nisi dolor, viverra in ultrices non, malesuada ac arcu. Aenean velit nisi, porta vel euismod vitae, imperdiet non neque. In hac habitasse platea dictumst. Donec volutpat augue ac quam cursus dignissim. Phasellus bibendum sapien non nunc sagittis tincidunt. Ut ut lorem pharetra, pellentesque sapien tempor, viverra est. Praesent iaculis nulla urna, non eleifend eros sagittis id.
+                </p>
+            </div> <!-- content__detalleB__text-->
+              
+            <div class="content__detalleB__photo">
+                <img class="content__detalleB__img" src="assets/img/detalle-blog/2.png" alt="">
+            </div>
+
+            
+            <div class="content__detalleB__social__block">
+                <div class="content__detalleB__social__item">
+                    <a clas="content__detalleB__social__link" href="#">
+                        <svg class="content__detalleB__social__link__icon">
+                            <use xlink:href="#fb"></use>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="content__detalleB__social__item">
+                    <a clas="content__detalleB__social__link" href="#">
+                        <svg class="content__detalleB__social__link__icon">
+                            <use xlink:href="#inst"></use>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="content__detalleB__social__item">
+                    <a clas="content__detalleB__social__link" href="#">
+                        <svg class="content__detalleB__social__link__icon">
+                            <use xlink:href="#twit"></use>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="content__detalleB__social__item">
+                    <a clas="content__detalleB__social__link" href="#">
+                        <svg class="content__detalleB__social__link__icon">
+                            <use xlink:href="#id"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div> <!-- /.content__detalleB__social__block -->
+               
+        </div> <!-- /.content__detalleB__blog__block 2 -->
+  
+        
+    </div> <!-- /.container --> 
+</section> <!-- /.content__detalleB --> 
+
+
+
+
+
+
+<section class="detalleB__gray">
+    <div class="container">
+        
+        <div class="detalleB__gray__block">
+            <div class="detalleB__gray__title">
+                ¿Quieres recibir más contenido
+                <br>
+                <span>y actualizaciones de tu interés?</span>
+            </div>
+        
+            <div class="detalleB__gray__text">
+                ¡Suscríbete a nuestro Newsletter!
+            </div>
+            
+            <div class="detalleB__gray__btn__block">
+                <input class="detalleB__gray__input" type="email" placeholder="nombreusuario@gmail.com">
+                <div class="detalleB__gray__btn">
+                    <a class="detalleB__gray__btn__link" href="contactenos__page.html">Enviar</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>           
+</section> <!-- /.detalleB__gray --> 
+
+
+
+
+<section class="detalleB__picture">
+    <img class="detalleB__picture__img" src="assets/img/detalle-blog/picture2.png" alt="">
+</section>
+
+
+
+
+
+
+
+<section class="content__detalleB">
+    <div class="container">
+           
+        <div class="content__detalleB__blog__block">
+            <div class="way">
+                <a class="way__link" href="contactenos__page.html">
+                    Blog  >  Categoría  >  <span>Título de la entrada</span>
+                </a>
+            </div>
+            
+            <div class="author__date">
+                <div class="author">
+                    Nombre del autor <br> @ndavidsan
+                    <div class="author__photo">
+                        <img clas="author__img" src="assets/img/detalle-blog/author3.png" alt="">
+                    </div>    
+                </div>
+                <div class="date">
+                    23 / 10 / 2019
+                </div>
+            </div>
+               
+            <div class="content__detalleB__title">
+                Título de la entrada a doble línea, título de la entrada
+            </div>
+            
+            <div class="content__detalleB__text">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ex justo, finibus vel volutpat sit amet, luctus nec mi. Integer vitae bibendum ex. Curabitur cursus neque vel metus vulputate finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lorem est, tempor at quam sed, sollicitudin sollicitudin magna. Praesent dictum nisi et convallis posuere. Ut laoreet non arcu nec finibus. Aenean id condimentum nisi. Curabitur vel dolor porttitor, iaculis mi sit amet, maximus est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                </p>
+                <p>
+                    Duis semper laoreet semper. Etiam quis metus et tortor viverra eleifend. Cras pellentesque pellentesque ipsum. Sed vehicula, arcu quis semper pharetra, lectus erat auctor lorem, sed porttitor dolor tellus pellentesque nunc. Fusce nibh elit, aliquet id lacinia non, vestibulum a urna. Aliquam felis ante, vulputate et vestibulum eu, malesuada in arcu. Etiam quis ultrices est.
+                </p>
+                <p>
+                    Fusce bibendum ut est quis placerat. Curabitur vitae libero nibh. Aenean porttitor ipsum efficitur sapien commodo, sit amet pulvinar ligula pulvinar. Morbi a aliquam enim, non pharetra nisi. Suspendisse et hendrerit elit. Morbi molestie faucibus neque ac imperdiet. Vivamus venenatis diam leo, vel aliquam enim dictum in. Cras viverra erat id placerat laoreet. Phasellus sodales molestie ipsum. Ut vehicula faucibus tristique. Fusce volutpat egestas tellus quis finibus. Nulla viverra, risus non facilisis faucibus, purus erat euismod diam, finibus aliquam quam lectus sit
+                </p>
+                
+                <p>
+                    Nullam scelerisque pretium hendrerit. Nunc erat ex, auctor ut consectetur eget, tempus ut nibh. Praesent in eros non quam rutrum blandit. Ut pretium ipsum ac justo ultricies, et ullamcorper felis fringilla. Phasellus vehicula quis est a bibendum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi sem metus, euismod eu nulla non, bibendum convallis sapien. Nullam nisl ipsum, egestas eget lobortis a, porttitor at leo. Cras non nisi ac elit ultrices consectetur. Etiam eros lectus, imperdiet in consequat eget, malesuada sed libero. Praesent mattis pharetra ultricies. Cras et scelerisque tellus. Etiam vitae justo ac elit lobortis ornare vitae consequat sem. Mauris purus nulla, auctor ut massa dapibus, pulvinar molestie nulla. Maecenas porta eros vitae euismod aliquam.
+                </p>
+                
+                <p>
+                    Etiam varius condimentum quam ut dapibus. Sed venenatis ex vitae odio cursus, vitae laoreet risus auctor. Cras vulputate, nisi nec sollicitudin auctor, ipsum tellus laoreet massa, vitae cursus augue quam et ipsum. Integer pulvinar massa at lectus dapibus, vitae accumsan diam consequat. Mauris nisi dolor, viverra in ultrices non, malesuada ac arcu. Aenean velit nisi, porta vel euismod vitae, imperdiet non neque. In hac habitasse platea dictumst. Donec volutpat augue ac quam cursus dignissim. Phasellus bibendum sapien non nunc sagittis tincidunt. Ut ut lorem pharetra, pellentesque sapien tempor, viverra est. Praesent iaculis nulla urna, non eleifend eros sagittis id.
+                </p>
+            </div> <!-- content__detalleB__text-->
+              
+            <div class="content__detalleB__social__block">
+                <div class="content__detalleB__social__item">
+                    <a clas="content__detalleB__social__link" href="#">
+                        <svg class="content__detalleB__social__link__icon">
+                            <use xlink:href="#fb"></use>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="content__detalleB__social__item">
+                    <a clas="content__detalleB__social__link" href="#">
+                        <svg class="content__detalleB__social__link__icon">
+                            <use xlink:href="#inst"></use>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="content__detalleB__social__item">
+                    <a clas="content__detalleB__social__link" href="#">
+                        <svg class="content__detalleB__social__link__icon">
+                            <use xlink:href="#twit"></use>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="content__detalleB__social__item">
+                    <a clas="content__detalleB__social__link" href="#">
+                        <svg class="content__detalleB__social__link__icon">
+                            <use xlink:href="#id"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div> <!-- /.content__detalleB__social__block -->
+               
+        </div> <!-- /.content__detalleB__blog__block 3 -->
+  
+        
+    </div> <!-- /.container --> 
+</section> <!-- /.content__detalleB --> 
+
+
+
+<section class="detalleB__gray">
+    <div class="container">
+        
+        <div class="detalleB__gray__block">
+            <div class="detalleB__gray__title">
+                ¿Quieres recibir más contenido
+                <br>
+                <span>y actualizaciones de tu interés?</span>
+            </div>
+        
+            <div class="detalleB__gray__text">
+                ¡Suscríbete a nuestro Newsletter!
+            </div>
+            
+            <div class="detalleB__gray__btn__block">
+                <input class="detalleB__gray__input" type="email" placeholder="nombreusuario@gmail.com">
+                <div class="detalleB__gray__btn">
+                    <a class="detalleB__gray__btn__link" href="contactenos__page.html">Enviar</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>           
+</section> <!-- /.detalleB__gray --> 
+
+
+
+
+
+
+
+
+
+
+<section class="detalleB__picture detalleB__picture--bottom">
+    <img class="detalleB__picture__img" src="assets/img/detalle-blog/picture3.png" alt="">
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer Detalle Blog -->
+<footer class="footer">
+    <div class="container">
+        
+        <div class="footer__news-social__block">
+            <div class="footer__news-social__item footer__news-social__item--left">
+                <div class="footer__news-social__title">
+                    ¡Suscríbete a nuestro Newsletter!
+                </div>
+                <div class="footer__news-social__form">
+                    <input class="footer__news-social__form__mail" type="email" placeholder="nombreusuario@gmail.com">
+                    <a class="footer__news-social__form__btn" href="contactenos__page.html">
+                        Enviar
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer__news-social__item footer__news-social__item--right">
+                <div class="footer__news-social__title">
+                    Encuentra más contenido
+                </div>
+                <div class="footer__news-social__social">
+                    <a href="index.html" target="_blank">
+                        <svg class="footer__social">
+                            <use xlink:href="#fb"></use>
+                        </svg>
+                    </a>
+                    <a href="la_agencia.html" target="_blank">
+                        <svg class="footer__social">
+                            <use xlink:href="#inst"></use>
+                        </svg>
+                    </a>
+                    <a href="blog__page.html" target="_blank">
+                        <svg class="footer__social">
+                            <use xlink:href="#twit"></use>
+                        </svg>
+                    </a>
+                    <a href="portafolio__page.html" target="_blank">
+                        <svg class="footer__social">
+                            <use xlink:href="#id"></use>
+                        </svg>
+                    </a>       
+                </div>
+            </div> <!-- /.footer__news-social__item--right -->
+            
+        </div> <!-- /.footer__news-social__block -->
+        
+        <div class="footer__hr"></div>
+        
+        
+        <div class="footer__inner">
+            
+            <div class="footer__inner__block">
+                
+                <div class="footer__inner__item">
+                    <img class="footer__inner__map" src="assets/img/footer/map.png" alt="">
+                </div>
+                
+                <div class="footer__inner__item">
+                    <div class="footer__inner__title">
+                        Datos de contacto
+                    </div>
+                    <div class="footer__inner__text">
+                        <span>Teléfono:</span> (+57) 300 789 45 23
+                    </div>
+                    <div class="footer__inner__text">
+                        <span>Email:</span> contact@tuempresa.com
+                    </div>
+                    <div class="footer__inner__text">
+                        <span>Dirección:</span> Carrera 12 # 34 - 56
+                    </div>
+                </div>
+                
+                <div class="footer__inner__item">
+                    <div class="footer__inner__title footer__inner__title--center">
+                        Déjanos tu mensaje
+                    </div>
+                    <input class="footer__inner__message" type="text" placeholder="Un asesor se pondrá en contacto lo más pronto posible...">
+                </div>
+                
+                <div class="footer__inner__item">
+                    <div class="footer__inner__title footer__inner__title--center">
+                        Mapa del sitio
+                    </div>
+                    
+                    <div class="footer__inner__links">
+                        <div class="footer__inner__nav__item">
+                            <a class="footer__inner__nav__link" href="index.html">
+                                Home
+                            </a>
+                            
+                            <a class="footer__inner__nav__link" href="la_agencia.html">
+                                La Agencia
+                            </a>
+                            
+                             <a class="footer__inner__nav__link" href="services__page.html">
+                                Servicios
+                            </a>
+                            
+                        </div>
+                        
+                         <div class="footer__inner__nav__item">
+                            <a class="footer__inner__nav__link" href="portafolio__page.html">
+                                Portafolio
+                            </a>
+                            
+                            <a class="footer__inner__nav__link" href="blog__page.html">
+                                Blog
+                            </a>
+                            
+                             <a class="footer__inner__nav__link" href="contactenos__page.html">
+                                Contáctanos
+                            </a>
+                            
+                        </div>
+                        
+                        
+                    </div> <!-- /.footer__inner__links -->
+                    
+                    <a class="footer__inner__btn" href="detalle__blog.html">
+                        ¡Solicita una asesoría aquí!
+                    </a>
+                    
+                </div> <!-- /.footer__inner__item -->
+                
+            </div> <!-- /.footer__inner__block -->
+            
+        </div> <!-- /.footer__inner -->
+        
+        
+    </div> <!-- /.container -->
+    
+    <div class="footer__down__line">
+        <div class="container">
+            
+            <div class="footer__down__line__block">
+                <div class="footer__down__line__item">
+                    Términos y Condiciones
+                </div>
+                
+                <div class="footer__down__line__item">
+                    Nombre de tu empresa © 2019 Todos los derechos reservados
+                </div>
+                
+                <div class="footer__down__line__item">
+                    Diseño por behance.net/ndavidsan
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+</footer>
+
+
+<script src="assets/js/app.min.js"></script>
+
+</body>
+</html>
