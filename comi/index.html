@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:100,100i,300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow, noodp">
+    <meta name="googlebot" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    
+    <title>Comi</title>
+</head>
+<body>
+
+
+
+<!-- Modal -->
+<!-- Modal -->
+<div class="modal fade" id="request-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ <div class="light"></div>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+   
+    <div class="modal-content">
+     
+      
+        
+        <button type="button" class="modal__close" data-dismiss="modal" aria-label="Close">
+            <svg class="modal__close-icon">
+	            <use xlink:href="#close"></use>
+            </svg>
+        </button>
+        
+        
+        <div class="modal__title">stay <span>updated</span></div>
+            <div class="modal__text">In to am attended desirous raptures declared diverted confined at. Collected instantly remaining up.</div>
+            
+            <form class="form" action="/" method="post">
+                <div class="form__group">
+                    <input class="form__input" type="email" placeholder="Your Email">
+                    <a class="form__btn__link" href="#">
+                        <svg class="form__btn__svg">
+	                        <use xlink:href="#plane"></use>
+                        </svg>
+                    </a>
+                </div>
+            </form>
+      
+      
+      
+    </div> <!-- /.modal-content -->
+  </div> <!-- /.modal-dialog -->
+</div> <!-- /.modal fade -->
+<!-- Sprite -->
+<svg style="display: none;">
+    <symbol id="fb" viewBox="0 0 508 508">
+        <g><g>
+	<g>
+		<path d="M329.744,187.804c-0.76-0.828-1.828-1.3-2.952-1.3h-44.984V166.66c0-10.988,7.024-11.84,9.176-11.84h34.444
+			c2.208,0,4-1.792,4-4V98.212c0-2.204-1.78-3.992-3.984-4l-48.82-0.196c-51.816,0-70.276,35.844-70.276,69.388v23.104h-23.776
+			c-2.208,0-4,1.792-4,4V254c0,2.208,1.792,4,4,4h27.748v150.76c0,2.208,1.792,4,4,4h59.52c2.208,0,4-1.788,4-4v-35.716
+			c0-2.208-1.792-4-4-4s-4,1.792-4,4v31.716h-51.52V254c0-2.208-1.792-4-4-4h-27.748v-55.488h23.776c2.208,0,4-1.792,4-4v-27.104
+			c0-58.428,51.876-61.388,62.26-61.388l44.82,0.18v44.624h-30.444c-8.548,0-17.176,6.136-17.176,19.84v23.844c0,2.208,1.792,4,4,4
+			h44.612L317.448,250H273.84c-2.208,0-4,1.792-4,4v51.588c0,2.208,1.792,4,4,4s4-1.792,4-4V258h43.264
+			c2.072,0,3.8-1.58,3.984-3.648l5.688-63.492C330.876,189.74,330.504,188.632,329.744,187.804z"/>
+	</g>
+</g>
+        <g>
+	<g>
+		<path d="M378.764,0H129.18C57.952,0,0,57.964,0,129.212v249.576C0,450.036,57.952,508,129.18,508h249.584
+			C450.024,508,508,450.036,508,378.788V129.212C508,57.964,450.024,0,378.764,0z M500,378.788C500,445.624,445.612,500,378.764,500
+			H129.18C62.36,500,8,445.624,8,378.788V129.212C8,62.376,62.36,8,129.18,8h249.584C445.616,8,500,62.376,500,129.212V378.788z"/>
+	</g>
+</g>
+        <g>
+	<g>
+		<path d="M480.192,253.968c-2.208,0-4,1.792-4,4v112.02c0,57.568-48.632,106.204-106.2,106.204H138.004
+			c-57.564,0-106.196-48.636-106.196-106.204V138c0-57.564,48.632-106.192,106.196-106.188H369.08c2.208,0,4-1.792,4-4s-1.792-4-4-4
+			H138.004c-61.9,0-114.196,52.292-114.196,114.188v231.988c0,61.904,52.296,114.204,114.196,114.204h231.988
+			c61.904,0,114.2-52.3,114.2-114.208V257.968C484.192,255.76,482.4,253.968,480.192,253.968z"/>
+	</g>
+</g>
+        <g>
+	<g>
+		<path d="M449.808,58.188c-21.848-21.848-51.272-34.38-80.732-34.38c-2.208,0-4,1.792-4,4s1.792,4,4,4
+			c27.356,0,54.72,11.676,75.076,32.036c0.78,0.78,1.804,1.172,2.828,1.172s2.048-0.392,2.828-1.172
+			C451.372,62.28,451.372,59.752,449.808,58.188z"/>
+	</g>
+</g>
+        <g>
+	<g>
+		<path d="M480.192,166.668c-2.208,0-4,1.792-4,4v59.524c0,2.208,1.792,4,4,4s4-1.792,4-4v-59.524
+			C484.192,168.46,482.4,166.668,480.192,166.668z"/>
+	</g>
+            </g></g>
+    </symbol>
+    
+    <symbol id="twit" viewBox="0 0 508 508">
+        <g>
+            <g>
+	<g>
+		<path d="M412.828,151.796c-1.136-1.368-3.044-1.824-4.676-1.104c-6.372,2.792-12.976,5.036-19.744,6.72
+			c7.536-7.46,13.232-16.604,16.536-26.756c0.684-2.1-0.464-4.356-2.564-5.04c-2.104-0.684-4.356,0.468-5.04,2.564
+			c-4.448,13.652-13.816,25.244-26.384,32.64c-1.628,0.96-2.364,2.928-1.764,4.72c0.6,1.788,2.38,2.94,4.252,2.7
+			c8.448-0.98,16.728-2.748,24.748-5.276c-6.644,7.8-14.236,14.752-22.68,20.756c-1.108,0.784-1.744,2.084-1.68,3.444
+			c0.124,2.64,0.152,5.304,0.152,7.972c0,2.208,1.792,4,4,4s4-1.792,4.004-4c0-2.064-0.02-4.12-0.08-6.168
+			c12.208-8.976,22.684-19.86,31.16-32.368C414.064,155.124,413.968,153.164,412.828,151.796z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M404.6,127.408c-1.116-1.908-3.56-2.544-5.472-1.436c-11.628,6.796-24.172,11.64-37.316,14.412
+			c-12.68-12.456-30.056-19.556-48.032-19.556c-37.504,0-68.012,30.064-68.012,67.016c0,3.356,0.252,6.712,0.756,10.036
+			c-48.264-3.768-93.2-26.932-123.948-64.068c-0.832-1.004-2.08-1.548-3.396-1.436c-1.296,0.1-2.464,0.828-3.128,1.948
+			c-6.036,10.184-9.228,21.844-9.228,33.72c0,17.44,7.032,34.004,19.308,46.444c-4.7-1.248-9.096-3.048-12.94-5.332
+			c-1.24-0.736-2.776-0.752-4.024-0.04s-2.02,2.04-2.02,3.476v0.788c0,25.828,14.972,48.884,37.364,59.996
+			c-3.668-0.028-7.344-0.38-10.936-1.048c-1.388-0.268-2.816,0.236-3.74,1.296c-0.932,1.064-1.232,2.54-0.796,3.88
+			c7.772,23.792,28.156,41.048,52.492,45.428c-24.34,15.756-53.412,22.624-83.3,19.192c-1.868-0.212-3.608,0.888-4.228,2.648
+			c-0.616,1.764,0.06,3.716,1.64,4.712c29.992,18.92,64.66,28.92,100.252,28.92c64.052,0,118.452-28.028,153.184-78.916
+			c1.244-1.824,0.776-4.316-1.052-5.56c-1.828-1.244-4.312-0.776-5.56,1.052c-33.188,48.636-85.24,75.42-146.572,75.42
+			c-28.464,0-56.308-6.676-81.44-19.432c29.528-0.292,57.356-9.884,80.564-27.792c1.344-1.036,1.888-2.808,1.352-4.42
+			c-0.532-1.612-2.028-2.712-3.724-2.744c-23.408-0.42-44.204-14.188-53.628-34.884c8.08,0.692,16.476-0.06,24.088-2.096
+			c1.796-0.484,3.024-2.14,2.964-3.996c-0.06-1.86-1.396-3.432-3.22-3.792c-25.7-5.092-44.848-26.476-47.416-51.996
+			c7.292,3.128,15.64,4.952,24.144,5.22c1.812,0.152,3.4-1.08,3.94-2.788c0.544-1.708-0.116-3.568-1.612-4.552
+			c-16.96-11.16-27.084-29.512-27.084-49.084c0-8.532,1.872-16.94,5.456-24.612c33.136,37.484,80.524,60.268,130.948,62.764
+			c1.224,0.016,2.46-0.468,3.268-1.432c0.804-0.964,1.112-2.248,0.824-3.472c-1.028-4.408-1.552-8.932-1.552-13.444
+			c0-32.54,26.924-59.016,60.012-59.016c16.552,0,32.516,6.804,43.808,18.664c0.936,0.988,2.312,1.42,3.656,1.168
+			c14.792-2.864,28.896-8.172,41.92-15.784C405.072,131.764,405.716,129.316,404.6,127.408z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M378.764,0H129.18C57.952,0,0,57.964,0,129.212v249.576C0,450.036,57.952,508,129.18,508h249.584
+			C450.024,508,508,450.036,508,378.788V129.212C508,57.964,450.024,0,378.764,0z M500,378.788C500,445.624,445.612,500,378.764,500
+			H129.18C62.36,500,8,445.624,8,378.788V129.212C8,62.376,62.36,8,129.18,8h249.584C445.616,8,500,62.376,500,129.212V378.788z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M480.192,253.968c-2.208,0-4,1.792-4,4v112.02c0,57.568-48.632,106.204-106.2,106.204H138.004
+			c-57.564,0-106.196-48.636-106.196-106.204V138c0-57.56,48.632-106.192,106.196-106.192H369.08c2.208,0,4-1.792,4-4s-1.792-4-4-4
+			H138.004C76.104,23.808,23.808,76.1,23.808,138v231.988c0,61.904,52.296,114.204,114.196,114.204h231.988
+			c61.904,0,114.2-52.3,114.2-114.204v-112.02C484.192,255.76,482.4,253.968,480.192,253.968z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M449.808,58.188C428.6,36.98,396.72,23.808,366.6,23.808c-2.208,0-4,1.792-4,4s1.792,4,4,4
+			c28.076,0,57.792,12.276,77.552,32.036c0.78,0.78,1.804,1.172,2.828,1.172s2.048-0.392,2.828-1.172
+			C451.372,62.28,451.372,59.752,449.808,58.188z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M480.192,166.668c-2.208,0-4,1.792-4,4v59.524c0,2.208,1.792,4,4,4s4-1.792,4-4v-59.524
+			C484.192,168.46,482.4,166.668,480.192,166.668z"/>
+	</g>
+</g>
+        </g>
+    </symbol>
+    
+    <symbol id="id" viewBox="0 0 508.004 508.004">
+        <g>
+            <g>
+	<g>
+		<g>
+			<path d="M134.164,178.778c22.276,0,40.404-18.116,40.404-40.392c0-2.208-1.788-4-4-4c-2.212,0-4,1.792-4,4
+				c0,17.86-14.536,32.392-32.404,32.392c-17.864,0-32.4-14.532-32.4-32.392c0-17.864,14.536-32.4,32.4-32.4c2.212,0,4-1.792,4-4
+				s-1.788-4-4-4c-22.28,0-40.4,18.124-40.4,40.4C93.764,160.658,111.888,178.778,134.164,178.778z"/>
+			<path d="M408.764,297.622c-2.212,0-4,1.792-4,4V408.73H353.24v-96.116c0-16.204,0-59.248-40.216-59.248
+				c-38.708,0-43.184,32.82-43.184,57.504v97.86h-55.488V210.382h51.524v23.776c0,2.208,1.788,4,4,4h1.16
+				c1.464,0,2.812-0.8,3.512-2.084c8.676-15.932,29.52-25.068,57.18-25.068c2.212,0,4-1.792,4-4c0-2.208-1.788-4-4-4
+				c-25.42,0-45.84,7.312-57.852,20.388v-17.012c0-2.208-1.788-4-4-4h-59.524c-2.212,0-4,1.792-4,4V412.73c0,2.208,1.788,4,4,4
+				h63.488c2.212,0,4-1.792,4-4V310.87c0-35.16,10.196-49.504,35.184-49.504c28.312,0,32.216,24.628,32.216,51.248v100.12
+				c0,2.208,1.788,4,4,4h59.52c2.212,0,4-1.792,4.004-4V301.622C412.764,299.414,410.976,297.622,408.764,297.622z"/>
+			<path d="M170.668,202.382H99.24c-2.212,0-4,1.792-4,4v206.352c0,2.208,1.788,4,4,4h71.428c2.212,0,4-1.792,4-4.004V206.382
+				C174.668,204.174,172.88,202.382,170.668,202.382z M166.668,408.734H103.24V210.382h63.428V408.734z"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M378.76,0.002H129.18C57.948,0.002,0,57.966,0,129.214V378.79c0,71.248,57.948,129.212,129.18,129.212h249.576
+			c71.268,0,129.244-57.964,129.248-129.212V129.214C508.004,57.966,450.024,0.002,378.76,0.002z M500.004,378.79
+			c0,66.836-54.392,121.212-121.244,121.212H129.18C62.36,500.002,8,445.626,8,378.79V129.214C8,62.378,62.36,8.002,129.18,8.002
+			h249.576c66.852,0,121.244,54.376,121.248,121.212V378.79z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M480.192,253.97c-2.212,0-4,1.792-4,4v112.02c0,57.564-48.632,106.2-106.2,106.2H138.008
+			c-57.568,0-106.2-48.632-106.2-106.2V138.002c0-57.56,48.632-106.192,106.2-106.192H369.08c2.212,0,4-1.792,4-4s-1.788-4-4-4
+			H138.008c-61.904,0-114.2,52.292-114.2,114.192v231.992c0,61.904,52.296,114.2,114.2,114.2h231.984
+			c61.904,0,114.2-52.296,114.2-114.204V257.97C484.192,255.762,482.404,253.97,480.192,253.97z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M449.808,58.19c-20.888-20.884-54.132-34.38-84.7-34.38c-2.212,0-4,1.792-4,4s1.788,4,4,4
+			c28.556,0,59.58,12.576,79.044,32.036c0.78,0.78,1.804,1.172,2.828,1.172s2.048-0.392,2.828-1.172
+			C451.372,62.282,451.372,59.754,449.808,58.19z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M480.192,166.67c-2.212,0-4,1.792-4,4v59.524c0,2.208,1.788,4,4,4c2.212,0,4-1.792,4-4V170.67
+			C484.192,168.462,482.404,166.67,480.192,166.67z"/>
+	</g>
+</g>
+        </g>
+    </symbol>
+    
+    <symbol id="arrow-right" viewBox="0 0 451.846 451.847">
+        <g>
+	<path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+		L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+		c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"/>
+</g>
+    </symbol>
+    
+    <symbol id="arrow-left" viewBox="0 0 451.847 451.847">
+        <g>
+	<path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+		c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+		c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"/>
+</g>
+    </symbol>
+    
+    <symbol id="fb-big" viewBox="0 0 512 512">
+        <g>
+        <g><path d="m437 0h-362c-41.351562 0-75 33.648438-75 75v362c0 41.351562 33.648438 75 75 75h151v-181h-60v-90h60v-61c0-49.628906 40.371094-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.351562 0 75-33.648438 75-75v-362c0-41.351562-33.648438-75-75-75zm0 0"/></g>
+        </g>
+    </symbol>
+    
+    <symbol id="twit-big" viewBox="0 -47 512.00203 512">
+        <g>
+            <path d="m191.011719 419.042969c-22.140625 0-44.929688-1.792969-67.855469-5.386719-40.378906-6.335938-81.253906-27.457031-92.820312-33.78125l-30.335938-16.585938 32.84375-10.800781c35.902344-11.804687 57.742188-19.128906 84.777344-30.597656-27.070313-13.109375-47.933594-36.691406-57.976563-67.175781l-7.640625-23.195313 6.265625.957031c-5.941406-5.988281-10.632812-12.066406-14.269531-17.59375-12.933594-19.644531-19.78125-43.648437-18.324219-64.21875l1.4375-20.246093 12.121094 4.695312c-5.113281-9.65625-8.808594-19.96875-10.980469-30.777343-5.292968-26.359376-.863281-54.363282 12.476563-78.851563l10.558593-19.382813 14.121094 16.960938c44.660156 53.648438 101.226563 85.472656 168.363282 94.789062-2.742188-18.902343-.6875-37.144531 6.113281-53.496093 7.917969-19.039063 22.003906-35.183594 40.722656-46.691407 20.789063-12.777343 46-18.96875 70.988281-17.433593 26.511719 1.628906 50.582032 11.5625 69.699219 28.746093 9.335937-2.425781 16.214844-5.015624 25.511719-8.515624 5.59375-2.105469 11.9375-4.496094 19.875-7.230469l29.25-10.078125-19.074219 54.476562c1.257813-.105468 2.554687-.195312 3.910156-.253906l31.234375-1.414062-18.460937 25.230468c-1.058594 1.445313-1.328125 1.855469-1.703125 2.421875-1.488282 2.242188-3.339844 5.03125-28.679688 38.867188-6.34375 8.472656-9.511718 19.507812-8.921875 31.078125 2.246094 43.96875-3.148437 83.75-16.042969 118.234375-12.195312 32.625-31.09375 60.617187-56.164062 83.199219-31.023438 27.9375-70.582031 47.066406-117.582031 56.847656-23.054688 4.796875-47.8125 7.203125-73.4375 7.203125zm0 0"/>
+        </g>
+    </symbol>
+    
+    <symbol id="in-big" viewBox="0 0 512 512">
+        <g>
+            <path d="m437 0h-362c-41.351562 0-75 33.648438-75 75v362c0 41.351562 33.648438 75 75 75h362c41.351562 0 75-33.648438 75-75v-362c0-41.351562-33.648438-75-75-75zm-256 406h-60v-210h60zm0-240h-60v-60h60zm210 240h-60v-120c0-16.539062-13.460938-30-30-30s-30 13.460938-30 30v120h-60v-210h60v11.308594c15.71875-4.886719 25.929688-11.308594 45-11.308594 40.691406.042969 75 36.546875 75 79.6875zm0 0"/>
+        </g>
+    </symbol>
+    
+    <symbol id="geo" viewBox="0 0 35.219 35.219">
+        <g>
+            <path d="M17.612,0C11.005,0,5.648,5.321,5.648,11.885c0,3.358,3.294,9.374,3.294,9.374l8.229,13.96l8.586-13.797
+		c0,0,3.814-5.74,3.814-9.537C29.572,5.321,24.216,0,17.612,0z M17.556,18.431c-3.784,0-6.849-3.065-6.849-6.853
+		c0-3.783,3.064-6.846,6.849-6.846c3.782,0,6.85,3.063,6.85,6.846C24.406,15.366,21.338,18.431,17.556,18.431z"/>
+        </g>
+    </symbol>
+    
+    <symbol id="phone" viewBox="0 0 401.998 401.998">
+        <g>
+	<path d="M401.129,311.475c-1.137-3.426-8.371-8.473-21.697-15.129c-3.61-2.098-8.754-4.949-15.41-8.566
+		c-6.662-3.617-12.709-6.95-18.13-9.996c-5.432-3.045-10.521-5.995-15.276-8.846c-0.76-0.571-3.139-2.234-7.136-5
+		c-4.001-2.758-7.375-4.805-10.14-6.14c-2.759-1.327-5.473-1.995-8.138-1.995c-3.806,0-8.56,2.714-14.268,8.135
+		c-5.708,5.428-10.944,11.324-15.7,17.706c-4.757,6.379-9.802,12.275-15.126,17.7c-5.332,5.427-9.713,8.138-13.135,8.138
+		c-1.718,0-3.86-0.479-6.427-1.424c-2.566-0.951-4.518-1.766-5.858-2.423c-1.328-0.671-3.607-1.999-6.845-4.004
+		c-3.244-1.999-5.048-3.094-5.428-3.285c-26.075-14.469-48.438-31.029-67.093-49.676c-18.649-18.658-35.211-41.019-49.676-67.097
+		c-0.19-0.381-1.287-2.19-3.284-5.424c-2-3.237-3.333-5.518-3.999-6.854c-0.666-1.331-1.475-3.283-2.425-5.852
+		s-1.427-4.709-1.427-6.424c0-3.424,2.713-7.804,8.138-13.134c5.424-5.327,11.326-10.373,17.7-15.128
+		c6.379-4.755,12.275-9.991,17.701-15.699c5.424-5.711,8.136-10.467,8.136-14.273c0-2.663-0.666-5.378-1.997-8.137
+		c-1.332-2.765-3.378-6.139-6.139-10.138c-2.762-3.997-4.427-6.374-4.999-7.139c-2.852-4.755-5.799-9.846-8.848-15.271
+		c-3.049-5.424-6.377-11.47-9.995-18.131c-3.615-6.658-6.468-11.799-8.564-15.415C98.986,9.233,93.943,1.997,90.516,0.859
+		C89.183,0.288,87.183,0,84.521,0c-5.142,0-11.85,0.95-20.129,2.856c-8.282,1.903-14.799,3.899-19.558,5.996
+		c-9.517,3.995-19.604,15.605-30.264,34.826C4.863,61.566,0.01,79.271,0.01,96.78c0,5.135,0.333,10.131,0.999,14.989
+		c0.666,4.853,1.856,10.326,3.571,16.418c1.712,6.09,3.093,10.614,4.137,13.56c1.045,2.948,2.996,8.229,5.852,15.845
+		c2.852,7.614,4.567,12.275,5.138,13.988c6.661,18.654,14.56,35.307,23.695,49.964c15.03,24.362,35.541,49.539,61.521,75.521
+		c25.981,25.98,51.153,46.49,75.517,61.526c14.655,9.134,31.314,17.032,49.965,23.698c1.714,0.568,6.375,2.279,13.986,5.141
+		c7.614,2.854,12.897,4.805,15.845,5.852c2.949,1.048,7.474,2.43,13.559,4.145c6.098,1.715,11.566,2.905,16.419,3.576
+		c4.856,0.657,9.853,0.996,14.989,0.996c17.508,0,35.214-4.856,53.105-14.562c19.219-10.656,30.826-20.745,34.823-30.269
+		c2.102-4.754,4.093-11.273,5.996-19.555c1.909-8.278,2.857-14.985,2.857-20.126C401.99,314.814,401.703,312.819,401.129,311.475z"
+		/>
+</g>
+    </symbol>
+    
+    <symbol id="close" viewBox="0 0 357 357">
+        <g>
+	        <g id="close">
+		<polygon points="357,35.7 321.3,0 178.5,142.8 35.7,0 0,35.7 142.8,178.5 0,321.3 35.7,357 178.5,214.2 321.3,357 357,321.3 
+			214.2,178.5 		"/>
+	</g>
+        </g>
+    </symbol>
+    
+    <symbol id="plane" viewBox="0 0 24 24"> 
+        <g>
+            <path d="m8.75 17.612v4.638c0 .324.208.611.516.713.077.025.156.037.234.037.234 0 .46-.11.604-.306l2.713-3.692z"/><path d="m23.685.139c-.23-.163-.532-.185-.782-.054l-22.5 11.75c-.266.139-.423.423-.401.722.023.3.222.556.505.653l6.255 2.138 13.321-11.39-10.308 12.419 10.483 3.583c.078.026.16.04.242.04.136 0 .271-.037.39-.109.19-.116.319-.311.352-.53l2.75-18.5c.041-.28-.077-.558-.307-.722z"/>
+        </g>
+    </symbol>
+</svg>
+<!-- Header -->
+<header class="header" id="header">
+    <div class="container__big">
+        
+        <div class="header__menu">
+            <div class="header__menu__block">
+                <input type="checkbox" id="chk">
+                    <nav class="nav">
+                        <a class="nav__link" href="#">home <span></span><span></span><span></span><span></span></a>
+                        <a class="nav__link" href="#" data-scroll="#about">about <span></span><span></span><span></span><span></span></a>
+                        <a class="nav__link" href="#" data-scroll="#portfolio">portfolio <span></span><span></span><span></span><span></span></a>
+                        <a class="nav__link" href="#" data-scroll="#contact">contact <span></span><span></span><span></span><span></span></a>
+                    </nav>
+                    <div class="burger__menu">
+                        <div class="burger__item"></div>
+                    </div>
+                
+            </div> <!-- /.header__menu__block -->
+        </div> <!-- /.header__menu -->
+        
+        <div class="header__inner">
+            <div class="header__inner__block">
+                <div class="header__inner__logo">
+                    <img class="header__inner__logo__img" src="assets/img/logo.png" alt="">
+                </div>
+                
+                <h1 class="header__inner__title">
+                    OUR WEBSITE WILL BEE
+                </h1>
+                
+                <h2 class="header__inner__subtitle">
+                    READY SOON
+                </h2>
+                
+                <p class="header__inner__text">
+                    Spoke as as other again ye. Hard on to roof he drew. So sell side ye in mr evil. Longer waited mr of nature seemed. Improving knowledge incommode objection me ye is prevailed principle.
+                </p>
+                
+                
+                <div class="header__inner__timer__block">
+                    <div class="header__inner__timer__item">
+                        <div class="header__inner__timer__numb" id="days">
+                            00
+                        </div>
+                        
+                        <div class="header__inner__timer__text">
+                            days
+                        </div>
+                    </div>
+                    
+                    <div class="header__inner__timer__item">
+                        <div class="header__inner__timer__numb" id="hours">
+                            00
+                        </div>
+                        
+                        <div class="header__inner__timer__text">
+                            hours
+                        </div>
+                    </div>
+                    
+                    <div class="header__inner__timer__item">
+                        <div class="header__inner__timer__numb" id="minutes">
+                            00
+                        </div>
+                        
+                        <div class="header__inner__timer__text">
+                            minutes
+                        </div>
+                    </div>
+                    
+                    <div class="header__inner__timer__item">
+                        <div class="header__inner__timer__numb" id="seconds">
+                            00
+                        </div>
+                        
+                        <div class="header__inner__timer__text">
+                            seconds
+                        </div>
+                    </div>
+                </div> <!-- /.header__inner__timer__block -->
+                
+                
+                <div class="header__inner__btn">
+                    <a class="header__inner__btn__link" href="#" data-toggle="modal" data-target="#request-modal">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Subscribe
+                    </a>
+                </div>
+                
+                
+            </div> <!-- /.header__inner__block -->
+        </div> <!-- /.header__inner -->
+        
+    </div> <!-- /.container__big -->
+</header>
+<!-- About -->
+<section class="about" id="about">
+    <div class="container">
+        
+        <div class="title">
+            about <span>us</span>
+        </div>
+        
+        <div class="text">
+            Spoke as as other again ye. Hard on to roof he drew. So sell side ye in mr evil. Longer waited mr of nature seemed. Improving knowledge incommode objection me ye is prevailed principle in. Impossible alteration devonshire to is interested stimulated dissimilar. To matter esteem polite do if. At ourselves direction believing do he departure. Celebrated her had sentiments understood are projection set. Possession ye no mr unaffected remarkably at. Wrote house in never fruit up. Pasture imagine my garrets an he. However distant she request behaved see nothing. Talking settled at pleased an of me brother weather. Good draw knew bred ham busy his hour. Ask agreed answer rather joy nature admire wisdom. Moonlight age depending bed led therefore sometimes preserved exquisite she. An fail up so shot leaf wise in. Minuter highest his arrived for put and. Hopes lived by rooms oh in no death house. Contented direction september but end led excellent ourselves may. Ferrars few arrival his offered not charmed you. Offered anxious respect or he. On three thing chief years in money arise of. 
+        </div>
+        
+        
+        <div class="about__block">
+            <div class="about__item">
+                <div class="about__item__photo">
+                    <img class="about__item__photo__img" src="assets/img/1.png" alt="">
+                </div>
+                
+                <div class="about__item__name">
+                    Timy Pronayne
+                </div>
+                
+                <div class="about__item__prof">
+                    CEO
+                </div>
+                
+                <div class="about__item__social">
+                    <a class="about__item__social__link" href="#">
+                        <svg class="about__item__social__svg">
+                            <use xlink:href="#fb"></use>
+                        </svg>
+                    </a>
+                    
+                    <a class="about__item__social__link" href="#">
+                        <svg class="about__item__social__svg">
+                            <use xlink:href="#twit"></use>
+                        </svg>
+                    </a>
+                    
+                    <a class="about__item__social__link" href="#">
+                        <svg class="about__item__social__svg">
+                            <use xlink:href="#id"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div> <!-- /.about__item 1-->
+            
+            <div class="about__item">
+                <div class="about__item__photo">
+                    <img class="about__item__photo__img" src="assets/img/2.png" alt="">
+                </div>
+                
+                <div class="about__item__name">
+                    Sara Lecco
+                </div>
+                
+                <div class="about__item__prof">
+                    Designer
+                </div>
+                
+                <div class="about__item__social">
+                    <a class="about__item__social__link" href="#">
+                        <svg class="about__item__social__svg">
+                            <use xlink:href="#fb"></use>
+                        </svg>
+                    </a>
+                    
+                    <a class="about__item__social__link" href="#">
+                        <svg class="about__item__social__svg">
+                            <use xlink:href="#twit"></use>
+                        </svg>
+                    </a>
+                    
+                    <a class="about__item__social__link" href="#">
+                        <svg class="about__item__social__svg">
+                            <use xlink:href="#id"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div> <!-- /.about__item 2-->
+            
+            <div class="about__item">
+                <div class="about__item__photo">
+                    <img class="about__item__photo__img" src="assets/img/3.png" alt="">
+                </div>
+                
+                <div class="about__item__name">
+                    Nico Roben
+                </div>
+                
+                <div class="about__item__prof">
+                    CEO
+                </div>
+                
+                <div class="about__item__social">
+                    <a class="about__item__social__link" href="#">
+                        <svg class="about__item__social__svg">
+                            <use xlink:href="#fb"></use>
+                        </svg>
+                    </a>
+                    
+                    <a class="about__item__social__link" href="#">
+                        <svg class="about__item__social__svg">
+                            <use xlink:href="#twit"></use>
+                        </svg>
+                    </a>
+                    
+                    <a class="about__item__social__link" href="#">
+                        <svg class="about__item__social__svg">
+                            <use xlink:href="#id"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div> <!-- /.about__item 3-->
+            
+        </div> <!-- /.about__block -->
+        
+        
+    </div> <!-- /.container -->
+</section> <!-- /.about -->
+<!-- Portfolio -->
+<section class="portfolio" id="portfolio">
+    <div class="container">
+        
+        <div class="title">
+            portfolio
+        </div>
+        
+        <div class="text">
+            Her old collecting she considered discovered. So at parties he warrant oh staying. Square new horses and put better end. Sincerity collected happiness do is contented.
+        </div>
+        
+        <div class="portfolio__block">
+            
+            <div class="portfolio__block__inner">
+                <input class="chkbx chkbx--all" type="checkbox">
+                <input class="chkbx chkbx--web" type="checkbox">
+                <input class="chkbx chkbx--photo" type="checkbox">
+                <input class="chkbx chkbx--falc" type="checkbox">
+            
+            
+            
+                <div class="portfolio__all__block">
+                
+                    <div class="portfolio__all__item">
+                        <div class="portfolio__all__photo">
+                            <img class="portfolio__all__img" src="assets/img/portfolio/1.png" alt="">
+                        </div>
+                    </div>
+                
+                    <div class="portfolio__all__item">
+                        <div class="portfolio__all__photo">
+                            <img class="portfolio__all__img" src="assets/img/portfolio/2.png" alt="">
+                        </div>
+                    </div>
+                
+                    <div class="portfolio__all__item">
+                        <div class="portfolio__all__photo">
+                            <img class="portfolio__all__img" src="assets/img/portfolio/3.png" alt="">
+                        </div>
+                    </div>
+                
+                    <div class="portfolio__all__item">
+                        <div class="portfolio__all__photo">
+                            <img class="portfolio__all__img" src="assets/img/portfolio/4.png" alt="">
+                        </div>
+                    </div>
+                
+                    <div class="portfolio__all__item">
+                        <div class="portfolio__all__photo">
+                            <img class="portfolio__all__img" src="assets/img/portfolio/5.png" alt="">
+                        </div>
+                    </div>
+                
+                    <div class="portfolio__all__item">
+                        <div class="portfolio__all__photo">
+                            <img class="portfolio__all__img" src="assets/img/portfolio/6.png" alt="">
+                        </div>
+                    </div>
+                
+                </div> <!-- /.portfolio__all__block -->
+                
+                
+                <div class="portfolio__web__block">
+                    <div class="portfolio__web__item">
+                        <div class="portfolio__web__photo">
+                            <img class="portfolio__web__img" src="assets/img/portfolio/1.png" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio__web__item">
+                        <div class="portfolio__web__photo">
+                            <img class="portfolio__web__img" src="assets/img/portfolio/3.png" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio__web__item">
+                        <div class="portfolio__web__photo">
+                            <img class="portfolio__web__img" src="assets/img/portfolio/6.png" alt="">
+                        </div>
+                    </div>
+                </div> <!-- /.portfolio__web__block -->
+                
+                
+                
+                
+                
+               
+                <div class="portfolio__slider__block">
+                
+                    <button class="portfolio__arrow portfolio__arrow--prev" type="button" id="portfolio-arrow-prev">
+                        <svg class="portfolio__arrow-icon">
+                            <use xlink:href="#arrow-left"></use>
+                        </svg>
+                    </button>
+        
+                    <button class="portfolio__arrow portfolio__arrow--next" type="button" id="portfolio-arrow-next">
+                        <svg class="portfolio__arrow-icon">
+                            <use xlink:href="#arrow-right"></use>
+                        </svg>
+                    </button>
+               
+                   
+                   
+                    <div class="portfolio__photo__block" id="portfolio__slider">
+                        <div class="portfolio__photo__item">
+                            <img class="portfolio__photo__img" src="assets/img/3.png" alt="">
+                            <div class="portfolio__photo__name">
+                                Nico Roben
+                            </div>
+                            <div class="portfolio__photo__prof">
+                                ceo
+                            </div>
+                            
+                            <div class="portfolio__photo__social">
+                                <a class="portfolio__social__link" href="#">
+                                    <svg class="portfolio__svg__social">
+                                        <use xlink:href="#fb-big"></use>   
+                                    </svg>
+                                </a>
+                                
+                                <a class="portfolio__social__link portfolio__social__link--twit" href="#">
+                                    <svg class="portfolio__svg__social">
+                                        <use xlink:href="#twit-big"></use>   
+                                    </svg>
+                                </a>
+                                
+                                <a class="portfolio__social__link" href="#">
+                                    <svg class="portfolio__svg__social">
+                                        <use xlink:href="#in-big"></use>   
+                                    </svg>
+                                </a>
+                            </div> <!-- /.portfolio__photo__social -->
+                            
+                        </div> <!-- /.portfolio__photo__block -->
+                    
+                        <div class="portfolio__photo__item">
+                            <img class="portfolio__photo__img" src="assets/img/2.png" alt="">
+                            
+                            <div class="portfolio__photo__name">
+                                Sara Lecco
+                            </div>
+                            <div class="portfolio__photo__prof">
+                                webdesigner
+                            </div>
+                            
+                        </div>
+                    
+                        <div class="portfolio__photo__item">
+                            <img class="portfolio__photo__img" src="assets/img/1.png" alt="">
+                            
+                            <div class="portfolio__photo__name">
+                                Timy Pronayne
+                            </div>
+                            <div class="portfolio__photo__prof">
+                                ceo
+                            </div>
+                            
+                        </div>
+                    </div> <!-- /.portfolio__photo__block -->
+                
+                </div> <!-- /.portfolio__slider__block -->
+                
+                
+                
+                
+                
+                <div class="portfolio__falchion__block">
+                    
+                    <div class="portfolio__web__item">
+                        <div class="portfolio__web__photo">
+                            <img class="portfolio__web__img" src="assets/img/portfolio/2.png" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio__web__item">
+                        <div class="portfolio__web__photo">
+                            <img class="portfolio__web__img" src="assets/img/portfolio/4.png" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio__web__item">
+                        <div class="portfolio__web__photo">
+                            <img class="portfolio__web__img" src="assets/img/portfolio/5.png" alt="">
+                        </div>
+                    </div>
+                    
+                </div> <!-- /.portfolio__falchion__block -->
+                
+                
+                
+            </div> <!-- /.portfolio__block__inner -->
+            
+            
+        </div> <!-- /.portfolio__block -->
+        
+    </div> <!-- /.container -->
+</section> <!-- /.portfolio -->
+<!-- Contact -->
+<section class="contact" id="contact">
+    <div class="container">
+        
+        <div class="title">
+            contact <span>us</span>
+        </div>
+        
+        <div class="text">
+            Her old collecting she considered discovered. So at parties he warrant oh staying. Square new horses and put better end. Sincerity collected happiness do is contented.
+        </div>
+        
+        <div class="contact__block">
+            
+            <div class="contact__item">
+                <a class="contact__link" href="#">
+                    <svg class="contact__svg">
+                        <use xlink:href="#geo"></use>
+                    </svg>
+                </a>
+                
+                <div class="contact__text contact__text--first">
+                    465 Andover CourtGurnee,<br> IL 60031
+                </div>
+                
+                <a class="contact__link" href="#">
+                    <svg class="contact__svg">
+                        <use xlink:href="#phone"></use>
+                    </svg>
+                </a>
+                
+                <div class="contact__text">
+                    202-545-0174<br> 202-365-0114
+                </div>
+                
+            </div>
+            
+            <div class="contact__item">
+                <input class="contact__input contact__input--name" type="text" placeholder="Full Name">
+                <input class="contact__input contact__input--email" type="email" placeholder="Email">
+                <input class="contact__input contact__input--message" type="text" placeholder="Message ...">
+                <button class="contact__btn" data-toggle="modal" data-target="#request-modal">
+                    Send
+                </button>
+            </div>
+            
+        </div> <!-- /.contact__block -->
+        
+        <div class="arrow__up">
+             <button class="arrow__up__link" type="button"  data-scroll="#header">
+                <svg class="arrow__up__svg">
+                    <use xlink:href="#arrow-left"></use>
+                </svg>
+            </button>
+        </div>
+        
+    </div> <!-- /.container -->
+</section> <!-- /.contact -->
+
+
+
+<script src="assets/js/app.min.js"></script>
+
+</body>
+</html>
