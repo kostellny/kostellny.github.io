@@ -1625,7 +1625,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .intro {
-    background: url("../img/intro.png") center no-repeat/cover;
+    background: url("../img/intro.png") center no-repeat;
+    background-size: cover;
     height: 100vh;
 }
 
@@ -2210,7 +2211,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .testimonials--about {
-    background: url("../img/about__choose/testimonials-bg.png") center no-repeat/cover;
+    background: url("../img/about__choose/testimonials-bg.png") center no-repeat;
+    background-size: cover;
 }
 
 .testimonials__slider {
@@ -2433,7 +2435,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .footer__map {
-    background: url("../img/footer/map.png") center no-repeat/cover;
+    background: url("../img/footer/map.png") center no-repeat;
+    background-size: cover;
     height: 370px;
 }
 
@@ -2958,7 +2961,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .services__features {
-    background: url("../img/services-features/bg.png") center no-repeat/cover;
+    background: url("../img/services-features/bg.png") center no-repeat;
+    background-size: cover;
 }
 
 .services__features__title__block {
