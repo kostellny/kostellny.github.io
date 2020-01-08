@@ -994,15 +994,18 @@ body {
 /* Blocks */
 /* Index */
 .header {
-    background: url("../img/header/bg.jpg") center no-repeat/cover;
+    background: url("../img/header/bg.jpg") center no-repeat;
+    background-size: cover;
 }
 
 .header--detalleP {
-    background: url("../img/detalle-portafolio/bg.png") center no-repeat/cover;
+    background: url("../img/detalle-portafolio/bg.png") center no-repeat;
+    background-size: cover;
 }
 
 .header--detalleB {
-    background: url("../img/detalle-blog/header-bg.png") center no-repeat/cover;
+    background: url("../img/detalle-blog/header-bg.png") center no-repeat;
+    background-size: cover;
     height: 100vh;
 }
 
@@ -2100,7 +2103,8 @@ body {
 }
 
 .services__portfolio {
-    background: url("../img/services/bg.png") center no-repeat/cover;
+    background: url("../img/services/bg.png") center no-repeat;
+    background-size: cover;
 }
 
 @media (max-width: 1800px) {
@@ -2524,7 +2528,8 @@ body {
 .contacts {
     padding-bottom: 100px;
     position: relative;
-    background: url("../img/contacts/bg.jpg") center no-repeat/cover;
+    background: url("../img/contacts/bg.jpg") center no-repeat;
+    background-size: cover;
 }
 
 .contacts__block {
@@ -2758,7 +2763,8 @@ body {
     z-index: 100000;
     padding-top: 150px;
     margin-top: -200px;
-    background: url("../img/footer/bg.png") center no-repeat/cover;
+    background: url("../img/footer/bg.png") center no-repeat;
+    background-size: cover;
     cursor: default;
 }
 
@@ -3045,7 +3051,8 @@ body {
 
 /* La Agencia */
 .trayectoria__inner {
-    background: url("../img/trayectoria/trayectoria-bg.png") center no-repeat/cover;
+    background: url("../img/trayectoria/trayectoria-bg.png") center no-repeat;
+    background-size: cover;
 }
 
 .trayectoria__block {
@@ -3185,7 +3192,8 @@ body {
 
 .team {
     padding-bottom: 210px;
-    background: url("../img/team/bg.png") center no-repeat/cover;
+    background: url("../img/team/bg.png") center no-repeat;
+    background-size: cover;
 }
 
 .team__block {
@@ -3410,7 +3418,8 @@ body {
 
 .servicios__content {
     padding-bottom: 210px;
-    background: url("../img/servicios-content/bg.png") center no-repeat/cover;
+    background: url("../img/servicios-content/bg.png") center no-repeat;
+    background-size: cover;
 }
 
 .servicios__content__item {
@@ -3608,7 +3617,8 @@ body {
 
 .portafolio-content {
     padding-bottom: 200px;
-    background: url("../img/portafolio-page/bg.png") center no-repeat/cover;
+    background: url("../img/portafolio-page/bg.png") center no-repeat;
+    background-size: cover;
 }
 
 @media (max-width: 1366px) {
@@ -4072,7 +4082,8 @@ body {
 
 .detalleP__video {
     padding-top: 38px;
-    background: url("../img/detalle-portafolio/video-bg.png") center no-repeat/cover;
+    background: url("../img/detalle-portafolio/video-bg.png") center no-repeat;
+    background-size: cover;
 }
 
 .detalleP__video__title {
@@ -4273,7 +4284,8 @@ body {
 /* Blog page */
 .blog__search {
     padding: 48px 0;
-    background: url("../img/blog/search-bg.png") center no-repeat/cover;
+    background: url("../img/blog/search-bg.png") center no-repeat;
+    background-size: cover;
 }
 
 .search__title {
@@ -4937,7 +4949,8 @@ body {
 }
 
 .form__contactenos {
-    background: url("../img/contactenos/form-bg.png") center no-repeat/cover;
+    background: url("../img/contactenos/form-bg.png") center no-repeat;
+    background-size: cover;
 }
 
 .form__contactenos__block {
