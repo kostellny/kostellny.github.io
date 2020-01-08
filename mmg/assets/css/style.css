@@ -1283,7 +1283,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .intro {
-    background: url("../img/intro/intro.png") center no-repeat/cover;
+    background: url("../img/intro/intro.png") center no-repeat;
+    background-size: cover;
 }
 
 .col__intro {
@@ -1424,7 +1425,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 .slider__item--right {
     padding-right: 135px;
-    background: url("../img/slider/1.png") center no-repeat/cover;
+    background: url("../img/slider/1.png") center no-repeat;
+    background-size: cover;
     text-align: right;
 }
 
@@ -1436,7 +1438,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 .slider__item--left {
     padding-left: 135px;
-    background: url("../img/slider/2.png") center no-repeat/cover;
+    background: url("../img/slider/2.png") center no-repeat;
+    background-size: cover;
 }
 
 @media (max-width: 790px) {
@@ -1656,7 +1659,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .download {
-    background: url("../img/download/download.png") center no-repeat/cover;
+    background: url("../img/download/download.png") center no-repeat;
+    background-size: cover;
     height: 100vh;
 }
 
@@ -1825,7 +1829,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .contacts {
-    background: url("../img/contacts/1.png") center no-repeat/cover;
+    background: url("../img/contacts/1.png") center no-repeat;
+    background-size: cover;
 }
 
 .contacts__bg {
