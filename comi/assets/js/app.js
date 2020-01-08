@@ -3871,7 +3871,7 @@ $(function() {
         }, 900);
         
     });
-    var count = new Date("dec 1, 2019 00:00:00").getTime();
+    var count = new Date("may 9, 2020 00:00:00").getTime();
     var x = setInterval(function() {
         var now = new Date().getTime();
         var d = count - now;
